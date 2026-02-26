@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+venv/
+.venv/
+env/
+.env
+*.h5
+*.keras
+*.pkl
+
+# Node
+frontend/cropsafe-web/node_modules/
+frontend/cropsafe-web/build/
+frontend/cropsafe-web/.env
+frontend/cropsafe-web/.env.local
+frontend/cropsafe-web/.cache
+frontend/cropsafe-web/dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data
+backend/data/
