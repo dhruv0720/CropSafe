@@ -1,0 +1,6 @@
+Files larger than 10 MB:
+4060.49 MB - backend/data/raw/archive (1)/severity_dataset.zip
+2035.72 MB - backend/data/raw/archive (1).zip
+10.37 MB - backend/data/raw/archive (1)/Final_Dataset/Wheat/Wheat_BrownRust/brown_rust_1099.png
+10.37 MB - backend/data/raw/archive (1)/severity_dataset_auto/Medium/brown_rust_1099.png
+10.37 MB - backend/data/raw/archive (1)/severity_dataset_auto/Medium/brown_rust_1099_43.png

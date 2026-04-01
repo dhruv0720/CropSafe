@@ -1,12 +1,14 @@
 # CropSafe 
 
-CropSafe is an AI-powered application designed to detect and identify crop diseases, including specific models for Wheat and Rice crops, as well as providing disease severity analysis using deep learning models. 
+CropSafe is an integrated web platform designed to help Indian farmers detect diseases in wheat and rice crops early and receive weather-based early warnings. It combines AI-powered disease detection, real-time severity assessment, and a weather-based early warning system with a bilingual (English/Hindi) voice assistant for accessibility.
+
+The system uses Google Gemini AI for intelligent disease analysis from uploaded or captured images, and the Open-Meteo API for 7‑day weather forecasts. A Web Speech API voice assistant allows low‑literacy farmers to interact naturally in Hindi.
 
 ## 🌾 Features
-- **Crop Disease Detection:** Utilizes advanced Keras and TensorFlow deep learning models (`rice_model.h5`, `wheat_model.h5`) to analyze uploaded images of crops.
-- **Disease Severity Analysis:** Evaluates the severity of the identified condition using multiple optimized severity models.
-- **LLM Integration:** Built-in generative AI functionalities using Google Gemini for comprehensive insights and real-time guidance.
-- **Interactive Dashboard:** A clean, responsive frontend built with React and Material UI, complete with geographic mapping (`react-leaflet`) and drag-and-drop image uploads (`react-dropzone`).
+- **Crop Disease Detection:** Upload or capture crop images; Gemini AI identifies diseases with confidence scores and severity assessment (Low/Medium/High/Very High)
+- **Early warning system:** Fetches real‑time weather data based on location; calculates 7‑day disease risk using temperature, humidity, and rainfall thresholds; displays color‑coded alerts.
+- **Voice Assistant:** Hindi/English speech recognition and synthesis; farmers can ask questions and receive spoken advice.
+- **Bilingual Interface:** Switch seamlessly between English and Hindi.
 
 ## 🛠️ Technology Stack
 ### Frontend
@@ -16,8 +18,10 @@ CropSafe is an AI-powered application designed to detect and identify crop disea
 - **HTTP Client:** Axios
 
 ### Backend
+- **Framework:** FastAPI
 - **Language:** Python
-- **Machine Learning:** TensorFlow / Keras
+- **ASGI server:** Uvicorn
+- **Image processing:** Pillow, OpenCV
 - **AI Integration:** Google Gemini API 
 
 ## 🚀 Getting Started
